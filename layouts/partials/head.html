@@ -12,9 +12,9 @@
 		color: {{ .Site.Params.bodytextcolor }};
 		}
 		</style>
-		<link rel="stylesheet" type="text/css" href="/css/default.css" />
-		<link rel="stylesheet" type="text/css" href="/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site.Params.BaseURL }}css/default.css" />
+		<link rel="stylesheet" type="text/css" href="{{ .Site.Params.BaseURL }}css/component.css" />
 		{{ range .Site.Params.custom_css }}
 			<link rel="stylesheet" href="{{ . }}">
 		{{ end }}
-		<script src="/js/modernizr.custom.js"></script>
+    <script src="{{ .Site.Params.BaseURL }}js/modernizr.custom.js"></script>
