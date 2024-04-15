@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://example.org/"
+baseurl = "http://garado.dev/rocks"
 languageCode = "en-us"
 title = "Alexis's Rock/Mineral/Fossil Collection"
 theme = "hugrid"
