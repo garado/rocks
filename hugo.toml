@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://garado.dev/"
+baseurl = "https://garado.dev"
 languageCode = "en-us"
 title = "Alexis's Rock/Mineral/Fossil Collection"
 theme = "hugrid"
