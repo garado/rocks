@@ -1,0 +1,6 @@
+public/
+archetypes/
+resources/
+assets/
+content.bak/
+.hugo_build.lock
