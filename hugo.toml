@@ -2,28 +2,36 @@
 baseurl = "https://garado.dev/rocks"
 languageCode = "en-us"
 title = "Alexis's Rock/Mineral/Fossil Collection"
-theme = "hugrid"
-
-contentdir = "content"
-datadir = "data"
-layoutdir = "layouts"
-publishdir = "public"
+theme = "gallery"
 
 [params]
-# Meta
-title = "Alexis's Rock/Mineral/Fossil Collection"
-subtitle = "I like geology."
-author = "author"
-description = "Alexis's Rock/Mineral/Fossil Collection"
+  defaultTheme = "dark"
+  title = "Alexis's Rock/Mineral/Fossil Collection"
+  description = "I like geology."
 
-# Body background color
-bodybgcolor = "#f9f9f9"
+  [author]
+    name = "Alexis Garado"
+    homepage = "https://garado.dev/rocks"
 
-# Preview container button text
-buttontext = "See more"
-
-# Footer text
-footertext = ""
-
-# add extra-css
-# custom_css = ['css/extra1.css', 'css/extra2.css']
+  [outputs]
+    home = ["HTML", "RSS"]
+    page = ["HTML"]
+    section = ["HTML"]
+  
+  [imaging]
+    quality = 75
+    resampleFilter = "CatmullRom"
+    [imaging.exif]
+      disableDate = false
+      disableLatLong = true
+      includeFields = "ImageDescription|Orientation"
+  
+  [menu]
+    [[menu.footer]]
+      name = "GitHub"
+      url = "https://github.com/nicokaiser/hugo-theme-gallery/"
+      weight = 3
+  
+  [services]
+    [services.rss]
+      limit = 100

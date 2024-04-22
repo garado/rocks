@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ partial "title.html" . }}
+  {{ partial "featured.html" . }}
+  <section class="galleries">
+    {{ range sort .Pages ".Params.Id" }} 
+      {{ if ne .Params.Private true }}
+        {{ partial "album-card.html" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}
+

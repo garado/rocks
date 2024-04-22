@@ -1,0 +1,21 @@
+{{ if .Title }}
+  <hgroup>
+    <h1>{{ .Title }}</h1>
+    <p>
+
+    {{ with .Params.Obtained_from }}
+     <b>Obtained from:</b> {{ . }}
+    {{ end }}
+    <br>
+    {{ with .Params.Obtained_on }}
+     <b>Obtained on:</b> {{ . }}
+    {{ end }}
+    <br> 
+    {{ with .Params.Origin}}
+     <b>Origin:</b> {{ . }}
+    {{ end }}
+    </p>
+
+    <p>{{ .Content }}</p>
+  </hgroup>
+{{ end }}
