@@ -2,6 +2,9 @@
   <hgroup>
     <h1>{{ .Title }}</h1>
     <p>
+    {{- with .Params.Id -}}
+    <b>ID:</b> {{ . -}}<br>
+    {{- end -}}
     {{- with .Params.Obtained_from -}}
     <b>Obtained from:</b> {{ . -}}<br>
     {{- end -}}

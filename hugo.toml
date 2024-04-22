@@ -4,6 +4,25 @@ languageCode = "en-us"
 title = "Alexis's Rock/Mineral/Fossil Collection"
 theme = "gallery"
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  mineral = 'minerals'
+  class = 'class'
+
+[related]
+  includeNewer = false
+  threshold = 100
+  toLower = false
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'tags'
+    pattern = ''
+    toLower = false
+    type = 'basic'
+    weight = 100
+
 [params]
   defaultTheme = "dark"
   title = "Alexis's Rock/Mineral/Fossil Collection"
