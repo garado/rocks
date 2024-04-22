@@ -2,20 +2,16 @@
   <hgroup>
     <h1>{{ .Title }}</h1>
     <p>
-
-    {{ with .Params.Obtained_from }}
-     <b>Obtained from:</b> {{ . }}
-    {{ end }}
-    <br>
-    {{ with .Params.Obtained_on }}
-     <b>Obtained on:</b> {{ . }}
-    {{ end }}
-    <br> 
-    {{ with .Params.Origin}}
-     <b>Origin:</b> {{ . }}
-    {{ end }}
+    {{- with .Params.Obtained_from -}}
+    <b>Obtained from:</b> {{ . -}}<br>
+    {{- end -}}
+    {{- with .Params.Obtained_on -}}
+    <b>Obtained on:</b> {{ . -}}<br>
+    {{- end -}}
+    {{- with .Params.Origin -}}
+    <b>Origin:</b> {{ . -}}<br>
+    {{- end -}}
     </p>
-
-    <p>{{ .Content }}</p>
+    {{- .Content -}}
   </hgroup>
 {{ end }}
