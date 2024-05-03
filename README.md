@@ -1,3 +1,3 @@
 # rocks and stuff
 
-Site for my rock/mineral/fossil collection using [aerohub's hugrid theme](https://github.com/aerohub/hugrid).
+Site for my rock/mineral/fossil collection using [nicokaiser's gallery theme](https://github.com/nicokaiser/hugo-theme-gallery).
